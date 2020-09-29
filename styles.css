@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/*
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    color: var(--secondary-text);
+
+    --text-ff: 'Source Sans Pro', monospace;
+
+    --title-fw: 400;
+    --button-fw: 300;
+
+    --title-margin: 8rem 0 4rem 0;
+
+    --primary-text: rgba(255, 255, 255, 1);
+    --secondary-text: rgba(255, 255, 255, .5);
+    --bg: rgba(2, 136, 209, 1);
+    --bg2: rgba(2, 136, 209, 0.5);
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--text-ff)
+}
+
+h1 {
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 30pt;
+    font-weight: 300;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 30pt;
+    font-weight: 300;
+    color: var(--primary-text);
+}
+
+h4 {
+
+}
+
+.title-bold {
+    font-weight: 500;
+}
+
+.desktop {
+    display: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg);
+    background-image: url("image/hero.svg");
+    background-blend-mode: normal;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.hero_header_top {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.header_top_img {
+    width: 40px;
+}
+
+.hero_header_bottom {
+    margin: 1rem 1rem 0 1rem;
+}
+
+.header_bottom_title {
+    margin: 0 0 2rem 0;
+}
+
+.header_bottom_img-wrapper {
+    margin: 1rem 0;
+}
+
+.header_bottom_img-wrapper_img {
+    margin: 0 1rem 0 0;
+    height: 30px;
+}
+
+.hero_cta {
+    margin: 0 1rem 4rem 1rem;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 0;
+}
+
+.hero_cta_main {
+    margin: 0 0 1rem 0;
+}
+
+.hero_cta_sub {
+    font-weight: 200;
+}
+
+.hero_cta::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--bg2);
+    top: 0;
+    right: -1rem;
+    bottom: 0;
+    left: -1rem;
+    height: 100%;
+}
