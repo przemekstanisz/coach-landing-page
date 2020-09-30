@@ -20,7 +20,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
     --primary-text: rgba(255, 255, 255, 1);
     --secondary-text: rgba(255, 255, 255, .5);
-    --bg: rgba(2, 136, 209, 1);
+    --bg: rgba(10, 10, 10, 1);
     --bg2: rgba(2, 136, 209, 0.5);
 }
 
@@ -125,7 +125,7 @@ h4 {
 
 .hero_cta::after {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     z-index: -1;
     background-color: var(--bg2);
